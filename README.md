@@ -7,7 +7,7 @@
 ## Circuit Diagram
 ![](https://github.com/Anupznk/Space-Attack-CSE-316-Project/blob/master/Space%20Attack.BMP)
 
-## How to Game Works
+## How the Game Works
 An `ATMega32` controls the main logic of the game. It also provides outputs
 required to run the 3x2 LED Matrix (each LED Matrix is 8x8) setup. There are two buttons attached to PA3(Player Goes up)
  and PA4(Player Goes down). Another button (PA5) is for shooting bullets. <br>
