@@ -1,4 +1,4 @@
-# Space-Attack-CSE-316-Project
+# Space Attack-Game on Microcontroller
 
 # Contents
 - `C` Codes that can be compiled in `Mircrochip Studio` to generate `hex files`. The hex files can be burned into any `ATMega32`
