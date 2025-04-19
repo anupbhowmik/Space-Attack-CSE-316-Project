@@ -1,4 +1,5 @@
 # Space Attack-Game on Microcontroller
+A simple game playable using button interface as controller and LED Matrix as the display. Includes an innovative approach that takes advantage of a Shift Register to make the interface efficient.
 
 # Contents
 - `C` Codes that can be compiled in `Mircrochip Studio` to generate `hex files`. The hex files can be burned into any `ATMega32`
