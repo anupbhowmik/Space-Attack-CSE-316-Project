@@ -9,7 +9,7 @@ A simple game playable using button interface as controller and LED Matrix as th
 
 ## Circuit Diagram
 
-![Circuit Diagram](space-ttack.BMP)
+![Circuit Diagram](space-attack.BMP)
 
 ## How the Game Works
 
