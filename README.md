@@ -2,7 +2,7 @@
 
 A simple game playable using button interface as controller and LED Matrix as the display. Includes an innovative approach that takes advantage of a Shift Register to make the interface efficient.
 
-# Contents
+## Contents
 
 - `C` Codes that can be compiled in `Mircrochip Studio` to generate `hex files`. The hex files can be burned into any `ATMega32`
 - Simulation projects that can be simulated in `Proteus`
@@ -24,12 +24,13 @@ remaining.
 To achieve a better gaming experience, we had decided to stack two rows of
 three 8x8 LED Matrices together and make a 3x2 display. Every single color
 LED Matrix has 16 pins, therefore, in order to control the 6 LED Matrices, we
-would need `16 × 6 = 96` pins along with the control pins for the LCD Display. Connecting all those pins would require a lot of wires and there is not enough pins avaliable in ATMega32. <br>
+would need `16 × 6 = 96` pins along with the control pins for the LCD Display. Connecting all those pins would require a lot of wires and there is not enough pins avaliable in ATMega32.
 
 That’s why we came up with a clever solution to minimize the number of pins
 required to control the LED Matrices and with this trick, the number of
 necessary pins can be kept constant and the display can be extended to `any
-number of LED Matrices`. <br>
+number of LED Matrices`.
+
 The trick is to use `74HC595N Shift Register` (6 Shift Registers for 6 LED Matrices) to control the voltage given
 to the rows of the LED Matrices.
 
@@ -49,8 +50,3 @@ Continue through all 8 rows Repeat entire cycle continuously. Because this happe
 3 control pins for shift registers (Data, Clock, Latch). The Shift Registers are `daisy-chained`, so only 3 pins are required to control all 6 LED Matrices.
 8 pins for column data (PORTB)
 Total: 11 pins instead of 96 pins
-
-### Speed and Smoothness
-
-- Complete display refresh: 6 matrices × 8 rows × 1ms = 48ms
-- Refresh rate: ~21 Hz (smooth enough for gaming)
